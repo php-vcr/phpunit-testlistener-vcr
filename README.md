@@ -9,8 +9,6 @@ Use `@vcr cassette_name` on your tests to turn VCR automatically on and off.
 
 ## Usage example
 
-Using static method calls:
-
 ``` php
 class VCRTest extends \PHPUnit_Framework_TestCase
 {    
@@ -28,7 +26,7 @@ class VCRTest extends \PHPUnit_Framework_TestCase
 
 ## Installation
 
-1. Add to your `composer.json`:
+1) Add to your `composer.json`:
 
 ``` json
     "require-dev": {
@@ -36,13 +34,13 @@ class VCRTest extends \PHPUnit_Framework_TestCase
     }
 ```
 
-2. Install using composer:
+2) Install using composer:
 
 ``` bash
 composer install --dev
 ```
 
-3. Add listener to your `phpunit.xml`:
+3) Add listener to your `phpunit.xml`:
 
 ``` bash
     <listeners>
