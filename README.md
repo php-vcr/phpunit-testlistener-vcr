@@ -1,5 +1,5 @@
-PHPUnit testlistener 
-========================
+PHPUnit Testlistener for PHP-VCR
+================================
 
 Integrates PHPUnit with [PHP-VCR](http://github.com/adri/php-vcr) using annotations.
 
@@ -68,7 +68,7 @@ phpunit ./tests
 
 ## Changelog
 
- * 2013-05-14 version 0.1: First prototype
+ * 2013-05-14 1.0.0: First prototype
  
 ## Copyright
 Copyright (c) 2013 Adrian Philipp. Released under the terms of the MIT license. See LICENSE for details.
