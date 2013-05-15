@@ -12,6 +12,8 @@
 
     "require": {
         "php": ">=5.3.15",
-        "adri/php-vcr": "dev"
-    }
+        "adri/php-vcr": "dev-master"
+    },
+
+     "minimum-stability": "dev"
 }
