@@ -1,0 +1,21 @@
+{
+    "name": "adri/phpunit-testlistener-vcr",
+    "description": "Integrates PHPUnit with PHP-VCR.",
+    "version": "1.0.0",
+
+    "authors": [
+        {
+            "name": "Adrian Philipp",
+            "email": "mail@adrian-philipp.com"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.3.15",
+        "adri/php-vcr": "*"
+    },
+
+    "require-dev": {
+        "adri/phpunit-testlistener-vcr": "*"
+    }
+}
