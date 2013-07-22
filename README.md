@@ -11,7 +11,7 @@ Use `@vcr cassette_name` on your tests to turn VCR automatically on and off.
 
 ``` php
 class VCRTest extends \PHPUnit_Framework_TestCase
-{    
+{
     /**
      * @vcr unittest_annotation_test
      */
@@ -43,8 +43,8 @@ composer install --dev
 3) Add listener to your `phpunit.xml`:
 
 ``` bash
-    <listeners>
-        <listener class="PHPUnit_Util_Log_VCR" file="PHPUnit/Util/Log/VCR.php"></listener>
+   <listeners>
+      <listener class="PHPUnit_Util_Log_VCR" file="vendor/adri/phpunit-testlistener-vcr/PHPUnit/Util/Log/VCR.php" />
     </listeners>
 ```
 
@@ -54,7 +54,7 @@ PHPUnit-Testlistener-VCR depends on:
 
   * PHP 5.3+
   * [adri/php-vcr](https://github.com/adri/php-vcr)
-  
+
 ## Run tests
 
 In order to run all tests you need to get development dependencies using composer:
@@ -67,7 +67,7 @@ phpunit ./tests
 ## Changelog
 
  * 2013-05-14 1.0.0: First prototype
- 
+
 ## Copyright
 Copyright (c) 2013 Adrian Philipp. Released under the terms of the MIT license. See LICENSE for details.
 
