@@ -11,7 +11,7 @@
     ],
 
     "require": {
-        "adri/php-vcr": "dev-f-soap"
+        "adri/php-vcr": "dev-master"
     },
 
      "minimum-stability": "dev"

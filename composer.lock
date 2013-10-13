@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "820c95161ffc5d9992ce68afc0a4bb19",
+    "hash": "f5e8d82b610d3e6dd38daecf6d74fd9f",
     "packages": [
         {
             "name": "adri/php-vcr",
-            "version": "dev-f-soap",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adri/php-vcr.git",
-                "reference": "b1f0c6f1fda48130bdf61fe0d91cc7ed2a464e77"
+                "reference": "7e4bc6212e8d65a014596fd9ba78237bc71a72ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adri/php-vcr/zipball/b1f0c6f1fda48130bdf61fe0d91cc7ed2a464e77",
-                "reference": "b1f0c6f1fda48130bdf61fe0d91cc7ed2a464e77",
+                "url": "https://api.github.com/repos/adri/php-vcr/zipball/7e4bc6212e8d65a014596fd9ba78237bc71a72ce",
+                "reference": "7e4bc6212e8d65a014596fd9ba78237bc71a72ce",
                 "shasum": ""
             },
             "require": {
@@ -27,8 +27,8 @@
                 "symfony/yaml": "2.*"
             },
             "require-dev": {
-                "behat/behat": "2.4.*@stable",
                 "guzzle/plugin-mock": "3.7.*",
+                "lapistano/proxy-object": "dev-master",
                 "mikey179/vfsstream": "dev-master",
                 "satooshi/php-coveralls": "dev-master"
             },
@@ -52,7 +52,7 @@
                 }
             ],
             "description": "Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.",
-            "time": "2013-10-10 14:08:14"
+            "time": "2013-10-13 08:05:39"
         },
         {
             "name": "beberlei/assert",
