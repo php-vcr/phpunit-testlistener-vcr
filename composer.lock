@@ -3,57 +3,8 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f5e8d82b610d3e6dd38daecf6d74fd9f",
+    "hash": "0dcd56a86c4e08c1e9c0572ab0fd89a7",
     "packages": [
-        {
-            "name": "adri/php-vcr",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/adri/php-vcr.git",
-                "reference": "7e4bc6212e8d65a014596fd9ba78237bc71a72ce"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/adri/php-vcr/zipball/7e4bc6212e8d65a014596fd9ba78237bc71a72ce",
-                "reference": "7e4bc6212e8d65a014596fd9ba78237bc71a72ce",
-                "shasum": ""
-            },
-            "require": {
-                "beberlei/assert": "1.*",
-                "ext-curl": "*",
-                "guzzle/http": "3.7.*",
-                "guzzle/plugin-backoff": "3.7.*",
-                "symfony/yaml": "2.*"
-            },
-            "require-dev": {
-                "guzzle/plugin-mock": "3.7.*",
-                "lapistano/proxy-object": "dev-master",
-                "mikey179/vfsstream": "dev-master",
-                "satooshi/php-coveralls": "dev-master"
-            },
-            "suggest": {
-                "ext-runkit": "*"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Adrian Philipp",
-                    "email": "mail@adrian-philipp.com"
-                }
-            ],
-            "description": "Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.",
-            "time": "2013-10-13 08:05:39"
-        },
         {
             "name": "beberlei/assert",
             "version": "v1.5",
@@ -396,6 +347,55 @@
             "time": "2013-07-30 22:07:23"
         },
         {
+            "name": "php-vcr/php-vcr",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-vcr/php-vcr.git",
+                "reference": "1eb4bedf664a6f9351d2c85edd249dc4864b98d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-vcr/php-vcr/zipball/1eb4bedf664a6f9351d2c85edd249dc4864b98d9",
+                "reference": "1eb4bedf664a6f9351d2c85edd249dc4864b98d9",
+                "shasum": ""
+            },
+            "require": {
+                "beberlei/assert": "1.*",
+                "ext-curl": "*",
+                "guzzle/http": "3.7.*",
+                "guzzle/plugin-backoff": "3.7.*",
+                "symfony/yaml": "2.*"
+            },
+            "require-dev": {
+                "guzzle/plugin-mock": "3.7.*",
+                "lapistano/proxy-object": "dev-master",
+                "mikey179/vfsstream": "dev-master",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "suggest": {
+                "ext-runkit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Philipp",
+                    "email": "mail@adrian-philipp.com"
+                }
+            ],
+            "description": "Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.",
+            "time": "2013-10-13 08:29:55"
+        },
+        {
             "name": "symfony/event-dispatcher",
             "version": "dev-master",
             "target-dir": "Symfony/Component/EventDispatcher",
@@ -505,7 +505,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "adri/php-vcr": 20
+        "php-vcr/php-vcr": 20
     },
     "platform": [
 
