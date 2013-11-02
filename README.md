@@ -1,7 +1,7 @@
 PHPUnit Testlistener for PHP-VCR
 ================================
 
-Integrates PHPUnit with [PHP-VCR](http://github.com/adri/php-vcr) using annotations.
+Integrates PHPUnit with [PHP-VCR](http://github.com/php-vcr/php-vcr) using annotations.
 
 ![PHP-VCR](https://dl.dropbox.com/u/13186339/blog/php-vcr.png)
 
@@ -30,7 +30,7 @@ class VCRTest extends \PHPUnit_Framework_TestCase
 
 ``` json
     "require-dev": {
-        "adri/phpunit-testlistener-vcr": "*"
+        "php-vcr/phpunit-testlistener-vcr": "*"
     }
 ```
 
@@ -44,7 +44,7 @@ composer install --dev
 
 ``` bash
    <listeners>
-      <listener class="PHPUnit_Util_Log_VCR" file="vendor/adri/phpunit-testlistener-vcr/PHPUnit/Util/Log/VCR.php" />
+      <listener class="PHPUnit_Util_Log_VCR" file="vendor/php-vcr/phpunit-testlistener-vcr/PHPUnit/Util/Log/VCR.php" />
     </listeners>
 ```
 
@@ -53,7 +53,7 @@ composer install --dev
 PHPUnit-Testlistener-VCR depends on:
 
   * PHP 5.3+
-  * [adri/php-vcr](https://github.com/adri/php-vcr)
+  * [php-vcr/php-vcr](https://github.com/php-vcr/php-vcr)
 
 ## Run tests
 
