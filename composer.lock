@@ -7,16 +7,16 @@
     "packages": [
         {
             "name": "beberlei/assert",
-            "version": "v1.5",
+            "version": "v1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/beberlei/assert.git",
-                "reference": "b01a2868fcebcefc14ce3ae240d5b2fbba1d7126"
+                "reference": "97515db6b6c8fb254f5c3ce5730cdfa5a1e3fbf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/beberlei/assert/zipball/b01a2868fcebcefc14ce3ae240d5b2fbba1d7126",
-                "reference": "b01a2868fcebcefc14ce3ae240d5b2fbba1d7126",
+                "url": "https://api.github.com/repos/beberlei/assert/zipball/97515db6b6c8fb254f5c3ce5730cdfa5a1e3fbf4",
+                "reference": "97515db6b6c8fb254f5c3ce5730cdfa5a1e3fbf4",
                 "shasum": ""
             },
             "require": {
@@ -44,21 +44,21 @@
                 "assertion",
                 "validation"
             ],
-            "time": "2013-10-01 11:37:27"
+            "time": "2014-01-25 08:48:48"
         },
         {
             "name": "guzzle/common",
-            "version": "dev-master",
+            "version": "v3.8.1",
             "target-dir": "Guzzle/Common",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/common.git",
-                "reference": "5126e268446c7e7df961b89128d71878e0652432"
+                "reference": "67f6c3fd04bae387d47c2a673fa623ed8f4189bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/common/zipball/5126e268446c7e7df961b89128d71878e0652432",
-                "reference": "5126e268446c7e7df961b89128d71878e0652432",
+                "url": "https://api.github.com/repos/guzzle/common/zipball/67f6c3fd04bae387d47c2a673fa623ed8f4189bb",
+                "reference": "67f6c3fd04bae387d47c2a673fa623ed8f4189bb",
                 "shasum": ""
             },
             "require": {
@@ -88,21 +88,21 @@
                 "event",
                 "exception"
             ],
-            "time": "2013-10-02 20:47:00"
+            "time": "2014-01-28 22:29:15"
         },
         {
             "name": "guzzle/http",
-            "version": "dev-master",
+            "version": "v3.8.1",
             "target-dir": "Guzzle/Http",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/http.git",
-                "reference": "3420035adcf312d62a2e64f3e6b3e3e590121786"
+                "reference": "565fd64be16d91c840f497c5de76f86d54a822d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/http/zipball/3420035adcf312d62a2e64f3e6b3e3e590121786",
-                "reference": "3420035adcf312d62a2e64f3e6b3e3e590121786",
+                "url": "https://api.github.com/repos/guzzle/http/zipball/565fd64be16d91c840f497c5de76f86d54a822d8",
+                "reference": "565fd64be16d91c840f497c5de76f86d54a822d8",
                 "shasum": ""
             },
             "require": {
@@ -145,28 +145,28 @@
                 "http",
                 "http client"
             ],
-            "time": "2013-09-20 22:05:53"
+            "time": "2014-01-23 18:23:29"
         },
         {
             "name": "guzzle/log",
-            "version": "dev-master",
+            "version": "v3.8.1",
             "target-dir": "Guzzle/Log",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/log.git",
-                "reference": "5f8820a1ef4b98bb8ffa7c85c575f302762fccd0"
+                "reference": "ecae63ecb5a428766a7183ac6269081ef5fbc7a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/log/zipball/5f8820a1ef4b98bb8ffa7c85c575f302762fccd0",
-                "reference": "5f8820a1ef4b98bb8ffa7c85c575f302762fccd0",
+                "url": "https://api.github.com/repos/guzzle/log/zipball/ecae63ecb5a428766a7183ac6269081ef5fbc7a6",
+                "reference": "ecae63ecb5a428766a7183ac6269081ef5fbc7a6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "suggest": {
-                "guzzle/http": "dev-master"
+                "guzzle/http": "v3.8.1"
             },
             "type": "library",
             "extra": {
@@ -201,17 +201,17 @@
         },
         {
             "name": "guzzle/parser",
-            "version": "dev-master",
+            "version": "v3.8.1",
             "target-dir": "Guzzle/Parser",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/parser.git",
-                "reference": "a25c2ddda1c52fb69a4ee56eb530b13ddd9573c2"
+                "reference": "3f52387052f2e4ef083145a0f73c3654aa14e086"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/parser/zipball/a25c2ddda1c52fb69a4ee56eb530b13ddd9573c2",
-                "reference": "a25c2ddda1c52fb69a4ee56eb530b13ddd9573c2",
+                "url": "https://api.github.com/repos/guzzle/parser/zipball/3f52387052f2e4ef083145a0f73c3654aa14e086",
+                "reference": "3f52387052f2e4ef083145a0f73c3654aa14e086",
                 "shasum": ""
             },
             "require": {
@@ -241,21 +241,21 @@
                 "message",
                 "url"
             ],
-            "time": "2013-07-11 22:46:03"
+            "time": "2013-10-24 00:04:09"
         },
         {
             "name": "guzzle/plugin-backoff",
-            "version": "dev-master",
+            "version": "v3.8.1",
             "target-dir": "Guzzle/Plugin/Backoff",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/plugin-backoff.git",
-                "reference": "2dfe094c5012a4e4e8dfd9660f6bc8ae1ea9bc41"
+                "reference": "2240f0d0420acea39090a07a6dc0336c0249e3a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/plugin-backoff/zipball/2dfe094c5012a4e4e8dfd9660f6bc8ae1ea9bc41",
-                "reference": "2dfe094c5012a4e4e8dfd9660f6bc8ae1ea9bc41",
+                "url": "https://api.github.com/repos/guzzle/plugin-backoff/zipball/2240f0d0420acea39090a07a6dc0336c0249e3a4",
+                "reference": "2240f0d0420acea39090a07a6dc0336c0249e3a4",
                 "shasum": ""
             },
             "require": {
@@ -291,21 +291,21 @@
                 "Guzzle",
                 "plugin"
             ],
-            "time": "2013-06-11 00:24:07"
+            "time": "2014-01-08 21:45:39"
         },
         {
             "name": "guzzle/stream",
-            "version": "dev-master",
+            "version": "v3.8.1",
             "target-dir": "Guzzle/Stream",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/stream.git",
-                "reference": "a86111d9ac7db31d65a053c825869409fe8fc83f"
+                "reference": "fa8af730ca714861c0001cfba64aaecc5f21bb96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/stream/zipball/a86111d9ac7db31d65a053c825869409fe8fc83f",
-                "reference": "a86111d9ac7db31d65a053c825869409fe8fc83f",
+                "url": "https://api.github.com/repos/guzzle/stream/zipball/fa8af730ca714861c0001cfba64aaecc5f21bb96",
+                "reference": "fa8af730ca714861c0001cfba64aaecc5f21bb96",
                 "shasum": ""
             },
             "require": {
@@ -344,7 +344,7 @@
                 "component",
                 "stream"
             ],
-            "time": "2013-07-30 22:07:23"
+            "time": "2014-01-28 22:14:17"
         },
         {
             "name": "php-vcr/php-vcr",
@@ -352,23 +352,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-vcr/php-vcr.git",
-                "reference": "1eb4bedf664a6f9351d2c85edd249dc4864b98d9"
+                "reference": "ae5a589796d11ae32dddfe5626d306bb5a48ab3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-vcr/php-vcr/zipball/1eb4bedf664a6f9351d2c85edd249dc4864b98d9",
-                "reference": "1eb4bedf664a6f9351d2c85edd249dc4864b98d9",
+                "url": "https://api.github.com/repos/php-vcr/php-vcr/zipball/ae5a589796d11ae32dddfe5626d306bb5a48ab3e",
+                "reference": "ae5a589796d11ae32dddfe5626d306bb5a48ab3e",
                 "shasum": ""
             },
             "require": {
                 "beberlei/assert": "1.*",
                 "ext-curl": "*",
-                "guzzle/http": "3.7.*",
-                "guzzle/plugin-backoff": "3.7.*",
+                "guzzle/http": "3.8.*",
+                "guzzle/plugin-backoff": "3.8.*",
                 "symfony/yaml": "2.*"
             },
             "require-dev": {
-                "guzzle/plugin-mock": "3.7.*",
+                "guzzle/plugin-mock": "3.8.*",
                 "lapistano/proxy-object": "dev-master",
                 "mikey179/vfsstream": "dev-master",
                 "satooshi/php-coveralls": "dev-master"
@@ -393,7 +393,7 @@
                 }
             ],
             "description": "Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.",
-            "time": "2013-10-13 08:29:55"
+            "time": "2014-02-19 18:26:46"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -402,19 +402,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "9b4fe5757870682eb2251e283228a66d938265a8"
+                "reference": "8b345992d9e850798f46a6c68804ac9e4965e91a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/9b4fe5757870682eb2251e283228a66d938265a8",
-                "reference": "9b4fe5757870682eb2251e283228a66d938265a8",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/8b345992d9e850798f46a6c68804ac9e4965e91a",
+                "reference": "8b345992d9e850798f46a6c68804ac9e4965e91a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "symfony/dependency-injection": "~2.0"
+                "psr/log": "~1.0",
+                "symfony/dependency-injection": "~2.0",
+                "symfony/stopwatch": "~2.2"
             },
             "suggest": {
                 "symfony/dependency-injection": "",
@@ -423,7 +425,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -438,7 +440,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
@@ -447,7 +451,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2013-09-19 09:47:34"
+            "time": "2014-02-11 13:52:21"
         },
         {
             "name": "symfony/yaml",
@@ -456,12 +460,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "ef4878bcca171ebe7466be0505b85a710818d788"
+                "reference": "9921872611710df49cf035c259e5a461ea2d0f8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/ef4878bcca171ebe7466be0505b85a710818d788",
-                "reference": "ef4878bcca171ebe7466be0505b85a710818d788",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/9921872611710df49cf035c259e5a461ea2d0f8c",
+                "reference": "9921872611710df49cf035c259e5a461ea2d0f8c",
                 "shasum": ""
             },
             "require": {
@@ -470,7 +474,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -485,7 +489,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
@@ -494,7 +500,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2013-09-22 18:04:51"
+            "time": "2014-01-07 13:29:57"
         }
     ],
     "packages-dev": [
