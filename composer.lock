@@ -148,58 +148,6 @@
             "time": "2014-01-23 18:23:29"
         },
         {
-            "name": "guzzle/log",
-            "version": "v3.8.1",
-            "target-dir": "Guzzle/Log",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/log.git",
-                "reference": "ecae63ecb5a428766a7183ac6269081ef5fbc7a6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/log/zipball/ecae63ecb5a428766a7183ac6269081ef5fbc7a6",
-                "reference": "ecae63ecb5a428766a7183ac6269081ef5fbc7a6",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "suggest": {
-                "guzzle/http": "v3.8.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Guzzle\\Log": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Guzzle log adapter component",
-            "homepage": "http://guzzlephp.org/",
-            "keywords": [
-                "Guzzle",
-                "adapter",
-                "log"
-            ],
-            "time": "2013-06-11 00:24:07"
-        },
-        {
             "name": "guzzle/parser",
             "version": "v3.8.1",
             "target-dir": "Guzzle/Parser",
@@ -242,56 +190,6 @@
                 "url"
             ],
             "time": "2013-10-24 00:04:09"
-        },
-        {
-            "name": "guzzle/plugin-backoff",
-            "version": "v3.8.1",
-            "target-dir": "Guzzle/Plugin/Backoff",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/plugin-backoff.git",
-                "reference": "2240f0d0420acea39090a07a6dc0336c0249e3a4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/plugin-backoff/zipball/2240f0d0420acea39090a07a6dc0336c0249e3a4",
-                "reference": "2240f0d0420acea39090a07a6dc0336c0249e3a4",
-                "shasum": ""
-            },
-            "require": {
-                "guzzle/http": "self.version",
-                "guzzle/log": "self.version",
-                "php": ">=5.3.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Guzzle\\Plugin\\Backoff": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Guzzle backoff retry plugins",
-            "homepage": "http://guzzlephp.org/",
-            "keywords": [
-                "Guzzle",
-                "plugin"
-            ],
-            "time": "2014-01-08 21:45:39"
         },
         {
             "name": "guzzle/stream",
@@ -352,29 +250,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-vcr/php-vcr.git",
-                "reference": "ae5a589796d11ae32dddfe5626d306bb5a48ab3e"
+                "reference": "244f1f8b81debb0ab428f9f190fce02f99360c00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-vcr/php-vcr/zipball/ae5a589796d11ae32dddfe5626d306bb5a48ab3e",
-                "reference": "ae5a589796d11ae32dddfe5626d306bb5a48ab3e",
+                "url": "https://api.github.com/repos/php-vcr/php-vcr/zipball/244f1f8b81debb0ab428f9f190fce02f99360c00",
+                "reference": "244f1f8b81debb0ab428f9f190fce02f99360c00",
                 "shasum": ""
             },
             "require": {
                 "beberlei/assert": "1.*",
                 "ext-curl": "*",
                 "guzzle/http": "3.8.*",
-                "guzzle/plugin-backoff": "3.8.*",
                 "symfony/yaml": "2.*"
             },
             "require-dev": {
                 "guzzle/plugin-mock": "3.8.*",
                 "lapistano/proxy-object": "dev-master",
-                "mikey179/vfsstream": "dev-master",
-                "satooshi/php-coveralls": "dev-master"
-            },
-            "suggest": {
-                "ext-runkit": "*"
+                "mikey179/vfsstream": "1.2.*",
+                "phpunit/phpunit": "3.7.*"
             },
             "type": "library",
             "autoload": {
@@ -393,7 +287,7 @@
                 }
             ],
             "description": "Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.",
-            "time": "2014-02-19 18:26:46"
+            "time": "2014-02-22 12:56:12"
         },
         {
             "name": "symfony/event-dispatcher",
