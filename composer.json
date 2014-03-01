@@ -11,8 +11,8 @@
     ],
 
     "require": {
-        "php-vcr/php-vcr": "dev-master"
+        "php-vcr/php-vcr": "1.*@dev"
     },
 
-     "minimum-stability": "dev"
+    "minimum-stability": "dev"
 }
