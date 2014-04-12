@@ -90,6 +90,18 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
     }
 
     /**
+     * Risky test.
+     *
+     * @param PHPUnit_Framework_Test $test
+     * @param Exception              $e
+     * @param float                  $time
+     */
+    public function addRiskyTest(PHPUnit_Framework_Test $test, Exception $e, $time)
+    {
+
+    }
+
+    /**
      * A test started.
      *
      * @param PHPUnit_Framework_Test $test
