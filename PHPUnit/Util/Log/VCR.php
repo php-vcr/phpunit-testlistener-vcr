@@ -119,7 +119,7 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
         $doc_block  = $reflection->getDocComment();
 
         // Use regex to parse the doc_block for a specific annotation
-        $parsed = $self::parseDocBlock($doc_block, '@vcr');
+        $parsed = self::parseDocBlock($doc_block, '@vcr');
         $cassetteName = array_pop($parsed);
 
         // If the cassette name ends in .json, then use the JSON storage format
