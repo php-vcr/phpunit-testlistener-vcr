@@ -37,7 +37,7 @@ class VCRTest extends \PHPUnit_Framework_TestCase
 2) Install using composer:
 
 ``` bash
-composer install --dev
+composer require --dev php-vcr/phpunit-testlistener-vcr
 ```
 
 3) Add listener to your `phpunit.xml`:
