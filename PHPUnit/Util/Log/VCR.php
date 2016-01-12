@@ -138,8 +138,6 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
         // If the cassette name ends in .json, then use the JSON storage format
         if (substr($cassetteName, '-5') == '.json') {
             \VCR\VCR::configure()->setStorage('json');
-        } else {
-            \VCR\VCR::configure()->setStorage('yaml');
         }
 
         if (empty($cassetteName)) {
