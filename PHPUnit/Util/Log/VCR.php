@@ -1,4 +1,5 @@
 <?php
+
 /**
  * A TestListener that integrates with PHP-VCR.
  *
@@ -13,7 +14,7 @@
  * @package    PHPUnit
  * @subpackage Util_Log
  * @author     Adrian Philipp <mail@adrian-philipp.com>
- * @copyright  2011-2012 Adrian Philipp <mail@adrian-philipp.com>
+ * @copyright  2011-2016 Adrian Philipp <mail@adrian-philipp.com>
  * @license    http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License
  * @version    Release: @package_version@
  * @link       http://www.phpunit.de/
@@ -118,6 +119,7 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
      * A test started.
      *
      * @param PHPUnit_Framework_Test $test
+     * @return bool|null
      */
     public function startTest(PHPUnit_Framework_Test $test)
     {
@@ -171,6 +173,7 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
 
         return $matches;
     }
+
     /**
      * A test ended.
      *

@@ -1,0 +1,5 @@
+*.idea*
+*.sublime-*
+**/vendor/*
+coverage/*
+/tests/fixtures/unittest_annotation_test_auto_generated.yml
