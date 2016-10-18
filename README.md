@@ -26,26 +26,18 @@ class VCRTest extends \PHPUnit_Framework_TestCase
 
 ## Installation
 
-1) Add to your `composer.json`:
+1) Install using composer:
 
-``` json
-    "require-dev": {
-        "php-vcr/phpunit-testlistener-vcr": "*"
-    }
-```
-
-2) Install using composer:
-
-``` bash
+```sh
 composer require --dev php-vcr/phpunit-testlistener-vcr
 ```
 
-3) Add listener to your `phpunit.xml`:
+2) Add listener to your `phpunit.xml`:
 
-``` bash
-   <listeners>
-      <listener class="PHPUnit_Util_Log_VCR" file="vendor/php-vcr/phpunit-testlistener-vcr/PHPUnit/Util/Log/VCR.php" />
-    </listeners>
+```yml
+<listeners>
+    <listener class="PHPUnit_Util_Log_VCR" file="vendor/php-vcr/phpunit-testlistener-vcr/PHPUnit/Util/Log/VCR.php" />
+</listeners>
 ```
 
 ## Dependencies
@@ -59,9 +51,9 @@ PHPUnit-Testlistener-VCR depends on:
 
 In order to run all tests you need to get development dependencies using composer:
 
-``` php
-composer install --dev
-phpunit ./tests
+```php
+composer install
+./vendor/bin/phpunit
 ```
 
 ## Changelog
@@ -69,7 +61,7 @@ phpunit ./tests
  * 2013-05-14 1.0.0: First prototype
 
 ## Copyright
-Copyright (c) 2013 Adrian Philipp. Released under the terms of the MIT license. See LICENSE for details.
+Copyright (c) 2013-2016 Adrian Philipp. Released under the terms of the MIT license. See LICENSE for details.
 
 <!--
 name of the projects and all sub-modules and libraries (sometimes they are named different and very confusing to new users)
