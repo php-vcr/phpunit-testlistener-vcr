@@ -38,7 +38,8 @@ class Util_Log_VCRTest extends PHPUnit_Framework_TestCase
     public function aDataProvider()
     {
         return array(
-            array(null)
+            array(1),
+            array(2)
         );
     }
 }
