@@ -1,0 +1,19 @@
+
+-
+    request:
+        method: GET
+        url: 'http://google.com'
+        headers:
+            Host: google.com
+    response:
+        status:
+            http_version: '1.1'
+            code: '302'
+            message: Found
+        headers:
+            Cache-Control: private
+            Content-Type: 'text/html; charset=UTF-8'
+            Location: 'http://www.google.nl/?gfe_rd=cr&ei=64oGWK_xHYPH8Af1267wCA'
+            Content-Length: '258'
+            Date: 'Tue, 18 Oct 2016 20:49:47 GMT'
+        body: "This is a annotation test dummy."

@@ -1,9 +1,14 @@
-<phpunit bootstrap="tests/bootstrap.php"
-         cacheTokens="true"
-         colors="true"
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.8/phpunit.xsd"
+         backupGlobals="false"
          convertErrorsToExceptions="true"
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
+         colors="true"
+         bootstrap="tests/bootstrap.php"
+         cacheTokens="true"
          forceCoversAnnotation="false"
          mapTestClassNameToCoveredClassName="false"
          printerClass="PHPUnit_TextUI_ResultPrinter"
@@ -14,15 +19,26 @@
          stopOnSkipped="false"
          testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
          strict="false"
-         debug="true"
-         verbose="true">
+         verbose="true"
+>
 
     <testsuites>
-        <directory>./tests</directory>>
+        <testsuite name="PHPUnit VCR Listener Test Suit">
+            <directory>./tests</directory>
+        </testsuite>
     </testsuites>
 
+    <filter>
+        <blacklist>
+            <directory>./vendor</directory>
+        </blacklist>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+        </whitelist>
+    </filter>
+
     <listeners>
-        <listener class="PHPUnit_Util_Log_VCR" file="PHPUnit/Util/Log/VCR.php"></listener>
+        <listener class="PHPUnit_Util_Log_VCR" file="PHPUnit/Util/Log/VCR.php" />
     </listeners>
 
 </phpunit>
