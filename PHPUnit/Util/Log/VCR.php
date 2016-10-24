@@ -124,7 +124,7 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
     public function startTest(PHPUnit_Framework_Test $test)
     {
         $class      = get_class($test);
-        $method     = $test->getName();
+        $method     = $test->getName(false);
 
         if (!method_exists($class, $method)) {
             return;
