@@ -1,0 +1,34 @@
+language: php
+
+matrix:
+  fast_finish: true
+  include:
+    - php: 5.3
+    - env: COMPOSER_FLAGS="--prefer-lowest"
+      php: 5.3
+    - php: 5.4
+    - php: 5.5
+    - php: 5.6
+    - env: COMPOSER_FLAGS="--prefer-lowest"
+      php: 5.6
+    - php: 7.0
+    - env: COMPOSER_FLAGS="--prefer-lowest"
+      php: 7.0
+
+before_install:
+  - composer self-update
+
+install:
+  - composer update --prefer-source -o $COMPOSER_FLAGS
+
+script:
+  - ./vendor/bin/phpunit -c phpunit.xml.dist --coverage-clover=coverage.clover
+
+after_success:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+
+cache:
+  directories:
+    - vendor
+    - $HOME/.composer/cache
