@@ -25,6 +25,15 @@ class Util_Log_VCRTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+     * @vcr
+     */
+    public function testInterceptsWithAnnotationsUsesTestsNameAndClassAsCassetteName()
+    {
+        $result = file_get_contents('http://google.com');
+        $this->assertEquals('This is a annotation test dummy.', $result, 'Call was not intercepted (using annotations).');
+    }
+
+    /**
      * @vcr unittest_annotation_test
      * @dataProvider aDataProvider
      */

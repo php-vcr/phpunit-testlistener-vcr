@@ -112,7 +112,6 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
      */
     public function addRiskyTest(PHPUnit_Framework_Test $test, Exception $e, $time)
     {
-
     }
 
     /**
@@ -136,6 +135,10 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
         // Use regex to parse the doc_block for a specific annotation
         $parsed = self::parseDocBlock($doc_block, '@vcr');
         $cassetteName = array_pop($parsed);
+
+        if ($cassetteName === null) {
+            $cassetteName = $class . '_' . $method;
+        }
 
         // If the cassette name ends in .json, then use the JSON storage format
         if (substr($cassetteName, '-5') == '.json') {
@@ -201,6 +204,5 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
      */
     public function endTestSuite(PHPUnit_Framework_TestSuite $suite)
     {
-
     }
 }
