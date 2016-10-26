@@ -7,6 +7,8 @@ Integrates PHPUnit with [PHP-VCR](http://github.com/php-vcr/php-vcr) using annot
 
 Use `@vcr cassette_name` on your tests to turn VCR automatically on and off.
 
+[![Build Status](https://travis-ci.org/php-vcr/phpunit-testlistener-vcr.svg?branch=master)](https://travis-ci.org/php-vcr/phpunit-testlistener-vcr)
+
 ## Usage example
 
 ```php
