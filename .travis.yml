@@ -23,6 +23,7 @@ install:
 
 script:
   - ./vendor/bin/phpunit -c phpunit.xml.dist --coverage-clover=coverage.clover
+  - ./vendor/bin/php-cs-fixer fix --dry-run --diff
 
 after_success:
   - wget https://scrutinizer-ci.com/ocular.phar
