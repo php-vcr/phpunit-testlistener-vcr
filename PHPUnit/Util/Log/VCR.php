@@ -142,12 +142,31 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
             \VCR\VCR::configure()->setStorage('json');
         }
 
+        $this->enableMatchers($doc_block);
+
         if (empty($cassetteName)) {
             return true;
         }
 
         \VCR\VCR::turnOn();
         \VCR\VCR::insertCassette($cassetteName);
+    }
+
+    private function enableMatchers($doc_block){
+        $parsed = self::parseDocBlock($doc_block, '@vcr_matchers');
+        $matchersString = isset($parsed) ? array_pop($parsed) : null;
+
+        // If we found matchers in the doc block
+        if(isset($matchersString)){
+            $explodedMatchers = explode(',', $matchersString);
+            // This is unfortunatly necessary as php will return an empty array if it doesn't find a delimiter
+            $matchersArray = $explodedMatchers ? $explodedMatchers : [$matchersString];
+            \VCR\VCR::configure()->enableRequestMatchers($matchersArray);
+        }
+        // If there are no matchers then set the matchers to the default list
+        else{
+            $matchersArray = ['method', 'url', 'query_string', 'host', 'headers', 'body', 'post_fields'];
+        }
     }
 
     private static function parseDocBlock($doc_block, $tag)
