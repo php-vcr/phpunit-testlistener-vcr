@@ -44,6 +44,7 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
      */
     public function __construct(array $options = array())
     {
+        $this->options = $options;
     }
 
     /**
@@ -56,7 +57,7 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
     public function addError(PHPUnit_Framework_Test $test, Exception $e, $time)
     {
     }
-    
+
     /**
      * A warning occurred.
      *
@@ -146,7 +147,10 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
             return true;
         }
 
-        \VCR\VCR::turnOn();
+        if (!$this->options['enableGlobally']) {
+            \VCR\VCR::turnOn();
+        }
+
         \VCR\VCR::insertCassette($cassetteName);
     }
 
@@ -155,7 +159,7 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
         $matches = array();
 
         if (empty($doc_block))
-        return $matches;
+            return $matches;
 
         $regex = "/{$tag} (.*)(\\r\\n|\\r|\\n)/U";
         preg_match_all($regex, $doc_block, $matches);
@@ -169,7 +173,7 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
 
         // Trim the results, array item by array item
         foreach ($matches as $ix => $match)
-        $matches[$ix] = trim( $match );
+            $matches[$ix] = trim( $match );
 
         return $matches;
     }
@@ -182,7 +186,9 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
      */
     public function endTest(PHPUnit_Framework_Test $test, $time)
     {
-        \VCR\VCR::turnOff();
+        if (!$this->options['enableGlobally']) {
+            \VCR\VCR::turnOff();
+        }
     }
 
     /**
