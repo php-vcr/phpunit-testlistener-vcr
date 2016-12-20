@@ -112,7 +112,6 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
      */
     public function addRiskyTest(PHPUnit_Framework_Test $test, Exception $e, $time)
     {
-
     }
 
     /**
@@ -154,8 +153,9 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
     {
         $matches = array();
 
-        if (empty($doc_block))
-        return $matches;
+        if (empty($doc_block)) {
+            return $matches;
+        }
 
         $regex = "/{$tag} (.*)(\\r\\n|\\r|\\n)/U";
         preg_match_all($regex, $doc_block, $matches);
@@ -168,8 +168,9 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
         $matches = $matches[1];
 
         // Trim the results, array item by array item
-        foreach ($matches as $ix => $match)
-        $matches[$ix] = trim( $match );
+        foreach ($matches as $ix => $match) {
+            $matches[$ix] = trim( $match );
+        }
 
         return $matches;
     }
@@ -201,6 +202,5 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
      */
     public function endTestSuite(PHPUnit_Framework_TestSuite $suite)
     {
-
     }
 }
