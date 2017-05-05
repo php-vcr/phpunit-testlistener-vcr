@@ -1,4 +1,9 @@
 <?php
+use PHPUnit\Framework\AssertionFailedError;
+use PHPUnit\Framework\Test;
+use PHPUnit\Framework\TestListener;
+use PHPUnit\Framework\Warning;
+use PHPUnit\Framework\TestSuite;
 
 /**
  * A TestListener that integrates with PHP-VCR.
@@ -20,7 +25,7 @@
  * @link       http://www.phpunit.de/
  * @since      Class available since Release 1.0.0
  */
-class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
+class PHPUnit_Util_Log_VCR implements TestListener
 {
     /**
      * @var array
@@ -49,68 +54,68 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
     /**
      * An error occurred.
      *
-     * @param PHPUnit_Framework_Test $test
-     * @param Exception              $e
-     * @param float                  $time
+     * @param Test      $test
+     * @param Exception $e
+     * @param float     $time
      */
-    public function addError(PHPUnit_Framework_Test $test, Exception $e, $time)
+    public function addError(Test $test, Exception $e, $time)
     {
     }
-    
+
     /**
      * A warning occurred.
      *
-     * @param PHPUnit_Framework_Test    $test
-     * @param PHPUnit_Framework_Warning $e
-     * @param float                     $time
+     * @param Test    $test
+     * @param Warning $e
+     * @param float   $time
      *
      * @since Method available since Release 5.1.0
      */
-    public function addWarning(PHPUnit_Framework_Test $test, PHPUnit_Framework_Warning $e, $time)
+    public function addWarning(Test $test, Warning $e, $time)
     {
     }
 
     /**
      * A failure occurred.
      *
-     * @param PHPUnit_Framework_Test                 $test
-     * @param PHPUnit_Framework_AssertionFailedError $e
-     * @param float                                  $time
+     * @param Test                 $test
+     * @param AssertionFailedError $e
+     * @param float                $time
      */
-    public function addFailure(PHPUnit_Framework_Test $test, PHPUnit_Framework_AssertionFailedError $e, $time)
+    public function addFailure(Test $test, AssertionFailedError $e, $time)
     {
     }
 
     /**
      * Incomplete test.
      *
-     * @param PHPUnit_Framework_Test $test
-     * @param Exception              $e
-     * @param float                  $time
+     * @param Test      $test
+     * @param Exception $e
+     * @param float     $time
      */
-    public function addIncompleteTest(PHPUnit_Framework_Test $test, Exception $e, $time)
+    public function addIncompleteTest(Test $test, Exception $e, $time)
     {
     }
 
     /**
      * Skipped test.
      *
-     * @param PHPUnit_Framework_Test $test
-     * @param Exception              $e
-     * @param float                  $time
+     * @param Test      $test
+     * @param Exception $e
+     * @param float     $time
      */
-    public function addSkippedTest(PHPUnit_Framework_Test $test, Exception $e, $time)
+    public function addSkippedTest(Test $test, Exception $e, $time)
     {
     }
 
     /**
      * Risky test.
      *
-     * @param PHPUnit_Framework_Test $test
-     * @param Exception              $e
-     * @param float                  $time
+     * @param Test      $test
+     * @param Exception $e
+     * @param float     $time
      */
-    public function addRiskyTest(PHPUnit_Framework_Test $test, Exception $e, $time)
+    public function addRiskyTest(Test $test, Exception $e, $time)
     {
 
     }
@@ -118,10 +123,10 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
     /**
      * A test started.
      *
-     * @param PHPUnit_Framework_Test $test
+     * @param Test $test
      * @return bool|null
      */
-    public function startTest(PHPUnit_Framework_Test $test)
+    public function startTest(Test $test)
     {
         $class      = get_class($test);
         $method     = $test->getName(false);
@@ -177,10 +182,10 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
     /**
      * A test ended.
      *
-     * @param PHPUnit_Framework_Test $test
+     * @param Test $test
      * @param float                  $time
      */
-    public function endTest(PHPUnit_Framework_Test $test, $time)
+    public function endTest(Test $test, $time)
     {
         \VCR\VCR::turnOff();
     }
@@ -188,18 +193,18 @@ class PHPUnit_Util_Log_VCR implements PHPUnit_Framework_TestListener
     /**
      * A test suite started.
      *
-     * @param PHPUnit_Framework_TestSuite $suite
+     * @param TestSuite $suite
      */
-    public function startTestSuite(PHPUnit_Framework_TestSuite $suite)
+    public function startTestSuite(TestSuite $suite)
     {
     }
 
     /**
      * A test suite ended.
      *
-     * @param PHPUnit_Framework_TestSuite $suite
+     * @param TestSuite $suite
      */
-    public function endTestSuite(PHPUnit_Framework_TestSuite $suite)
+    public function endTestSuite(TestSuite $suite)
     {
 
     }

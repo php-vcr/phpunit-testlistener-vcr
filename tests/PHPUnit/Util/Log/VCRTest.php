@@ -1,9 +1,11 @@
 <?php
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * Test integration of PHPVCR with PHPUnit using annotations.
  */
-class Util_Log_VCRTest extends PHPUnit_Framework_TestCase
+class Util_Log_VCRTest extends TestCase
 {
     /**
      * @vcr unittest_annotation_test
