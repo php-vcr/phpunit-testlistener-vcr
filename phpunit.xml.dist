@@ -11,19 +11,19 @@
          cacheTokens="true"
          forceCoversAnnotation="false"
          mapTestClassNameToCoveredClassName="false"
-         printerClass="PHPUnit_TextUI_ResultPrinter"
+         printerClass="PHPUnit\TextUI\ResultPrinter"
          processIsolation="false"
          stopOnError="false"
          stopOnFailure="false"
          stopOnIncomplete="false"
          stopOnSkipped="false"
-         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         testSuiteLoaderClass="PHPUnit\Runner\StandardTestSuiteLoader"
          strict="false"
          verbose="true"
 >
 
     <testsuites>
-        <testsuite name="PHPUnit VCR Listener Test Suit">
+        <testsuite name="PHPUnit VCR Listener Test Suite">
             <directory>./tests</directory>
         </testsuite>
     </testsuites>
@@ -38,7 +38,7 @@
     </filter>
 
     <listeners>
-        <listener class="PHPUnit_Util_Log_VCR" file="PHPUnit/Util/Log/VCR.php" />
+        <listener class="VCR\PHPUnit\TestListener\VCRTestListener" file="src/VCRTestListener.php" />
     </listeners>
 
 </phpunit>

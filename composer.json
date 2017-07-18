@@ -2,18 +2,26 @@
     "name": "php-vcr/phpunit-testlistener-vcr",
     "description": "Integrates PHPUnit with PHP-VCR.",
     "license": "MIT",
-
     "authors": [
         {
             "name": "Adrian Philipp",
             "email": "mail@adrian-philipp.com"
         }
     ],
-
+    "autoload": {
+        "psr-4": {
+            "VCR\\PHPUnit\\TestListener\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\VCR\\PHPUnit\\TestListener\\": "tests/"
+        }
+    },
     "require": {
-        "php-vcr/php-vcr": "^1.1.8"
+        "php-vcr/php-vcr": "^1.3"
     },
     "require-dev": {
-        "phpunit/phpunit": "^4.8|^5.0"
+        "phpunit/phpunit": "^6.2"
     }
 }
