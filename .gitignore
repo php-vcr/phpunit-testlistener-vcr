@@ -2,3 +2,4 @@
 *.sublime-*
 **/vendor/*
 coverage/*
+composer.lock

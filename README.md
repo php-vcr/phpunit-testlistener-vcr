@@ -11,8 +11,11 @@ Use `@vcr cassette_name` on your tests to turn VCR automatically on and off.
 
 ## Usage example
 
-```php
-class VCRTest extends \PHPUnit_Framework_TestCase
+``` php
+
+use PHPUnit\Framework\TestCase;
+
+class VCRTest extends TestCase
 {
     /**
      * @vcr unittest_annotation_test
@@ -30,15 +33,15 @@ class VCRTest extends \PHPUnit_Framework_TestCase
 
 1) Install using composer:
 
-```sh
+``` sh
 composer require --dev php-vcr/phpunit-testlistener-vcr
 ```
 
 2) Add listener to your `phpunit.xml`:
 
-```yml
+``` xml
 <listeners>
-    <listener class="PHPUnit_Util_Log_VCR" file="vendor/php-vcr/phpunit-testlistener-vcr/PHPUnit/Util/Log/VCR.php" />
+    <listener class="VCR\PHPUnit\TestListener\VCRTestListener" file="vendor/php-vcr/phpunit-testlistener-vcr/src/VCRTestListener.php" />
 </listeners>
 ```
 
@@ -53,7 +56,7 @@ PHPUnit-Testlistener-VCR depends on:
 
 In order to run all tests you need to get development dependencies using composer:
 
-```php
+``` php
 composer install
 ./vendor/bin/phpunit
 ```
@@ -63,7 +66,7 @@ composer install
 **The changelog is manage at [PHPUnit testlistener for PHP-VCR releases page](https://github.com/php-vcr/phpunit-testlistener-vcr/releases).**
 
 ## Copyright
-Copyright (c) 2013-2016 Adrian Philipp. Released under the terms of the MIT license. See LICENSE for details.
+Copyright (c) 2013-2017 Adrian Philipp. Released under the terms of the MIT license. See LICENSE for details.
 
 <!--
 name of the projects and all sub-modules and libraries (sometimes they are named different and very confusing to new users)
