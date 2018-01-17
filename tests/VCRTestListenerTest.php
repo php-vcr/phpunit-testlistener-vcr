@@ -3,12 +3,19 @@
 namespace Tests\VCR\PHPUnit\TestListener;
 
 use PHPUnit\Framework\TestCase;
+use VCR\VCR;
 
 /**
  * Test integration of PHPVCR with PHPUnit using annotations.
  */
 class VCRTestListenerTest extends TestCase
 {
+    public function testTakesConfigurationFromListenerConfig()
+    {
+        // phpunit.xml.dist has already set the mode to "none", default is "new_episodes"
+        $this->assertEquals(VCR::MODE_NONE, VCR::configure()->getMode());
+    }
+
     /**
      * @vcr unittest_annotation_test
      */

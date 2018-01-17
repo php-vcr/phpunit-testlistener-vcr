@@ -38,7 +38,15 @@
     </filter>
 
     <listeners>
-        <listener class="VCR\PHPUnit\TestListener\VCRTestListener" file="src/VCRTestListener.php" />
+        <listener class="VCR\PHPUnit\TestListener\VCRTestListener" file="src/VCRTestListener.php">
+            <arguments>
+                <array>
+                    <element key="mode">
+                        <string>none</string>
+                    </element>
+                </array>
+            </arguments>
+        </listener>
     </listeners>
 
 </phpunit>
