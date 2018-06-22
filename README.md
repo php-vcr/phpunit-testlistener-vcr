@@ -1,8 +1,8 @@
-# PHPUnit Testlistener for PHP-VCR
+# PHPUnit TestListener for PHP-VCR
 
 Integrates PHPUnit with [PHP-VCR](http://github.com/php-vcr/php-vcr) using annotations.
 
-![PHP-VCR](https://dl.dropbox.com/u/13186339/blog/php-vcr.png)
+![PHP-VCR](https://user-images.githubusercontent.com/133832/27151811-0d95c6c4-514c-11e7-834e-eff1eec2ea16.png)
 
 Use `@vcr cassette_name` on your tests to turn VCR automatically on and off.
 
@@ -47,8 +47,8 @@ composer require --dev php-vcr/phpunit-testlistener-vcr
 ## Dependencies
 
 PHPUnit-Testlistener-VCR depends on:
-
-  * PHP 7.0+
+  * PHP 7.1+
+  * PHP 7.0+ (use <3.0)
   * [php-vcr/php-vcr](https://github.com/php-vcr/php-vcr)
 
 ## Run tests
@@ -65,4 +65,5 @@ composer install
 **The changelog is manage at [PHPUnit testlistener for PHP-VCR releases page](https://github.com/php-vcr/phpunit-testlistener-vcr/releases).**
 
 ## Copyright
-Copyright (c) 2013-2017 Adrian Philipp. Released under the terms of the MIT license. See LICENSE for details.
+Copyright (c) 2013-2018 Adrian Philipp. Released under the terms of the MIT license. See LICENSE for details.
+[Contributors](https://github.com/php-vcr/phpunit-testlistener-vcr/graphs/contributors)
