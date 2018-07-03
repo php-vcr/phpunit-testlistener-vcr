@@ -40,6 +40,14 @@ final class VCRTestListenerTest extends TestCase
         $this->assertEquals('This is a annotation test dummy.', $result, 'Call was not intercepted (using annotations with data provider).');
     }
 
+    /**
+     * @group https://github.com/php-vcr/phpunit-testlistener-vcr/issues/29
+     */
+    public function testNoVcrAnnotationRunsSuccessfulAndDoesNotProduceWarnings()
+    {
+        $this->assertTrue(true, 'just adding an assertion here');
+    }
+
     public function dummyDataProvider(): array
     {
         return [
