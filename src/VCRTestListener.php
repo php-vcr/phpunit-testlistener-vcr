@@ -45,13 +45,13 @@ final class VCRTestListener implements TestListener
         $parsed = self::parseDocBlock($docBlock, '@vcr');
         $cassetteName = array_pop($parsed);
 
+        if (empty($cassetteName)) {
+            return;
+        }
+
         // If the cassette name ends in .json, then use the JSON storage format
         if (substr($cassetteName, -5) === '.json') {
             VCR::configure()->setStorage('json');
-        }
-
-        if (empty($cassetteName)) {
-            return;
         }
 
         VCR::turnOn();
