@@ -50,6 +50,7 @@ PHPUnit-Testlistener-VCR depends on:
   * PHP 7.1+
   * PHP 7.0+ (use <3.0)
   * [php-vcr/php-vcr](https://github.com/php-vcr/php-vcr)
+  * [PHPUnit](https://phpunit.de/#supported-versions) 7
 
 ## Run tests
 
