@@ -19,9 +19,7 @@
         }
     },
     "require": {
-        "php-vcr/php-vcr": "^1.4"
-    },
-    "require-dev": {
+        "php-vcr/php-vcr": "^1.4",
         "phpunit/phpunit": "^7"
     }
 }

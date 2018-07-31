@@ -58,9 +58,9 @@ class VCRTestListener implements TestListener
     /**
      * An error occurred.
      *
-     * @param Test      $test
-     * @param Exception $e
-     * @param float     $time
+     * @param Test       $test
+     * @param \Throwable $t
+     * @param float      $time
      */
     public function addError(Test $test, \Throwable $t, float $time): void
     {
@@ -94,7 +94,7 @@ class VCRTestListener implements TestListener
      * Incomplete test.
      *
      * @param Test       $test
-     * @param \Exception $e
+     * @param \Throwable $e
      * @param float      $time
      */
     public function addIncompleteTest(Test $test, \Throwable $e, float $time): void
@@ -105,7 +105,7 @@ class VCRTestListener implements TestListener
      * Skipped test.
      *
      * @param Test       $test
-     * @param \Exception $e
+     * @param \Throwable $e
      * @param float      $time
      */
     public function addSkippedTest(Test $test, \Throwable $e, float $time): void
@@ -116,7 +116,7 @@ class VCRTestListener implements TestListener
      * Risky test.
      *
      * @param Test       $test
-     * @param \Exception $e
+     * @param \Throwable $e
      * @param float      $time
      */
     public function addRiskyTest(Test $test, \Throwable $e, float $time): void
@@ -128,7 +128,7 @@ class VCRTestListener implements TestListener
      *
      * @param Test $test
      *
-     * @return bool|null
+     * @throws \ReflectionException
      */
     public function startTest(Test $test): void
     {
