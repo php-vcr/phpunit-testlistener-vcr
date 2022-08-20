@@ -1,5 +1,5 @@
 {
-    "name": "php-vcr/phpunit-testlistener-vcr",
+    "name": "covergenius/phpunit-testlistener-vcr",
     "description": "Integrates PHPUnit with PHP-VCR.",
     "license": "MIT",
     "authors": [
