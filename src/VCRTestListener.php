@@ -45,7 +45,7 @@ final class VCRTestListener implements TestListener
         $parsed = self::parseDocBlock($docBlock, '@vcr');
         $cassetteName = array_pop($parsed);
 
-        if (empty($cassetteName)) {
+        if ($cassetteName) {
             return;
         }
 
