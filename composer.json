@@ -1,11 +1,11 @@
 {
-    "name": "php-vcr/phpunit-testlistener-vcr",
-    "description": "Integrates PHPUnit with PHP-VCR.",
+    "name": "ivancli/phpunit-testlistener-vcr",
+    "description": "A forked version of php-vcr/phpunit-testlistener-vcr",
     "license": "MIT",
     "authors": [
         {
-            "name": "Adrian Philipp",
-            "email": "mail@adrian-philipp.com"
+            "name": "Ivan Li",
+            "email": "ivan.li@hotmail.com"
         }
     ],
     "autoload": {
