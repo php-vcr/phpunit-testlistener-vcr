@@ -10,7 +10,7 @@
       <directory>./tests</directory>
     </testsuite>
   </testsuites>
-  <listeners>
-    <listener class="VCR\PHPUnit\TestListener\VCRTestListener" file="src/VCRTestListener.php"/>
-  </listeners>
+  <extensions>
+    <bootstrap class="VCR\PHPUnit\TestListener\VCRTestListener" />
+  </extensions>
 </phpunit>

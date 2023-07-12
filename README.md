@@ -39,6 +39,13 @@ composer require --dev php-vcr/phpunit-testlistener-vcr
 2) Add listener to your `phpunit.xml`:
 
 ``` xml
+<extensions>
+    <bootstrap class="VCR\PHPUnit\TestListener\VCRTestListener" />
+</extensions>
+```
+
+Prior to PHPUnit 10
+``` xml
 <listeners>
     <listener class="VCR\PHPUnit\TestListener\VCRTestListener" file="vendor/php-vcr/phpunit-testlistener-vcr/src/VCRTestListener.php" />
 </listeners>
@@ -47,8 +54,11 @@ composer require --dev php-vcr/phpunit-testlistener-vcr
 ## Dependencies
 
 PHPUnit-Testlistener-VCR depends on:
-  * PHP 7.1+
+  * PHP 8.1+  
+  * PHP 7.1+ (use <4.0)
   * PHP 7.0+ (use <3.0)
+  * PHPUnit 10+
+  * PHPUnit <10 (use <4.0) 
   * [php-vcr/php-vcr](https://github.com/php-vcr/php-vcr)
 
 ## Run tests
