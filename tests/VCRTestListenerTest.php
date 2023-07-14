@@ -48,7 +48,10 @@ final class VCRTestListenerTest extends TestCase
         $this->assertTrue(true, 'just adding an assertion here');
     }
 
-    public function dummyDataProvider(): array
+    /**
+     * @return \int[][]
+     */
+    public static function dummyDataProvider(): array
     {
         return [
             [1],
