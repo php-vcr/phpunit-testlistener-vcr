@@ -84,7 +84,7 @@ composer install
 
 ## Changelog
 
-**The changelog is manage at [PHPUnit testlistener for PHP-VCR releases page](https://github.com/covergenius/covergenius/phpunit-testlistener-vcr/releases).**
+**The changelog is manage at [PHPUnit testlistener for PHP-VCR releases page](https://github.com/covergenius/phpunit-testlistener-vcr/releases).**
 
 ## Copyright
 Copyright (c) 2013-2018 Adrian Philipp. Released under the terms of the MIT license. See LICENSE for details.
