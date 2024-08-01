@@ -21,6 +21,6 @@
     "require": {
         "covergenius/php-vcr": "^1.7",
         "php": "^8.1",
-        "phpunit/phpunit": "^10.4"
+        "phpunit/phpunit": "^10.4 | ^11"
     }
 }
