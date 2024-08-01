@@ -43,7 +43,11 @@ class OnTestPrepared implements Event\Test\PreparedSubscriber
     {
         $reflection = new \ReflectionClass($test);
         $class = $reflection->getProperty('className')->getValue($test);
-        $method = $test->name();
+        if ($test instanceof Event\Code\TestMethod) {
+            $method = $test->methodName();
+        } else {
+            $method = $test->name();
+        }
 
         $reflection = new \ReflectionMethod($class, $method);
         $docblock = $reflection->getDocComment();
