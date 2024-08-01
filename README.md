@@ -1,12 +1,17 @@
 # PHPUnit TestListener for PHP-VCR
 
-Integrates PHPUnit with [PHP-VCR](http://github.com/php-vcr/php-vcr) using annotations.
+[![CI Tests](https://github.com/covergenius/phpunit-testlistener-vcr/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/covergenius/phpunit-testlistener-vcr/actions)
+[![License](https://img.shields.io/packagist/l/covergenius/phpunit-testlistener-vcr.svg?style=flat-square)](LICENSE)
+[![Development Version](https://img.shields.io/packagist/vpre/covergenius/phpunit-testlistener-vcr.svg?style=flat-square)](https://packagist.org/packages/covergenius/phpunit-testlistener-vcr)
+[![Monthly Installs](https://img.shields.io/packagist/dm/covergenius/phpunit-testlistener-vcr.svg?style=flat-square)](https://packagist.org/packages/covergenius/phpunit-testlistener-vcr)
+
+Integrates PHPUnit with [PHP-VCR](http://github.com/covergenius/php-vcr) using annotations.
 
 ![PHP-VCR](https://user-images.githubusercontent.com/133832/27151811-0d95c6c4-514c-11e7-834e-eff1eec2ea16.png)
 
 Use `@vcr cassette_name` on your tests to turn VCR automatically on and off.
 
-[![Build Status](https://travis-ci.org/php-vcr/phpunit-testlistener-vcr.svg?branch=master)](https://travis-ci.org/php-vcr/phpunit-testlistener-vcr)
+
 
 ## Usage example
 
@@ -33,8 +38,10 @@ class VCRTest extends TestCase
 1) Install using composer:
 
 ``` sh
-composer require --dev php-vcr/phpunit-testlistener-vcr
+composer require --dev covergenius/phpunit-testlistener-vcr
 ```
+
+### For phpunit version 10+
 
 2) Add listener to your `phpunit.xml`:
 
@@ -44,22 +51,27 @@ composer require --dev php-vcr/phpunit-testlistener-vcr
 </extensions>
 ```
 
-Prior to PHPUnit 10
+### For phpunit version 9 and below
 ``` xml
 <listeners>
-    <listener class="VCR\PHPUnit\TestListener\VCRTestListener" file="vendor/php-vcr/phpunit-testlistener-vcr/src/VCRTestListener.php" />
+    <listener class="VCR\PHPUnit\TestListener\VCRTestListener" file="vendor/covergenius/phpunit-testlistener-vcr/src/VCRTestListener.php" />
 </listeners>
 ```
 
 ## Dependencies
+PHPUnit-Testlistener-VCR depends on the following;
 
-PHPUnit-Testlistener-VCR depends on:
-  * PHP 8.1+  
-  * PHP 7.1+ (use <4.0)
-  * PHP 7.0+ (use <3.0)
-  * PHPUnit 10+
-  * PHPUnit <10 (use <4.0) 
-  * [php-vcr/php-vcr](https://github.com/php-vcr/php-vcr)
+* [php-vcr/php-vcr](https://github.com/covergenius/php-vcr)
+
+### Version 4
+* PHP 8.1+
+* PHPUnit >=10
+
+### Version 3
+
+* PHP 7.1+
+* PHPUnit <10 
+
 
 ## Run tests
 
@@ -72,8 +84,8 @@ composer install
 
 ## Changelog
 
-**The changelog is manage at [PHPUnit testlistener for PHP-VCR releases page](https://github.com/php-vcr/phpunit-testlistener-vcr/releases).**
+**The changelog is manage at [PHPUnit testlistener for PHP-VCR releases page](https://github.com/covergenius/covergenius/phpunit-testlistener-vcr/releases).**
 
 ## Copyright
 Copyright (c) 2013-2018 Adrian Philipp. Released under the terms of the MIT license. See LICENSE for details.
-[Contributors](https://github.com/php-vcr/phpunit-testlistener-vcr/graphs/contributors)
+[Contributors](https://github.com/covergenius/phpunit-testlistener-vcr/graphs/contributors)

@@ -1,0 +1,45 @@
+name: CI Tests
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - v*
+
+jobs:
+  tests:
+    runs-on: ubuntu-22.04
+
+    strategy:
+      fail-fast: false
+      matrix:
+        stability: [prefer-stable]
+        versions: [
+          { php: 8.1, phpunit: 10 }, { php: 8.2, phpunit: 10 }, { php: 8.3, phpunit: 10 },
+          { php: 8.2, phpunit: 11 }, { php: 8.3, phpunit: 11 }
+        ]
+
+    name: PHP ${{ matrix.versions.php }} - PHPUnit ${{ matrix.versions.phpunit }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Docs: https://github.com/shivammathur/setup-php
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.versions.php }}
+          extensions: dom, curl, libxml, mbstring, zip
+          ini-values: error_reporting=E_ALL
+          tools: composer:v2
+          coverage: none
+
+      - name: Install dependencies
+        run: |
+          composer require "phpunit/phpunit=^${{ matrix.versions.phpunit }}" --no-update
+          composer update --prefer-dist --no-interaction --no-progress --optimize-autoloader
+
+      - name: Run phpunit tests
+        run: composer test
