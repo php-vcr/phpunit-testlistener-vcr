@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Tests\VCR\PHPUnit\TestListener;
 
 use PHPUnit\Framework\TestCase;
+use VCR\PHPUnit\TestListener\Attributes\Vcr;
 
 final class VCRTestListenerTest extends TestCase
 {
@@ -46,6 +47,14 @@ final class VCRTestListenerTest extends TestCase
     public function testNoVcrAnnotationRunsSuccessfulAndDoesNotProduceWarnings()
     {
         $this->assertTrue(true, 'just adding an assertion here');
+    }
+
+    #[Vcr('unittest_annotation_test')]
+    public function testInterceptsWithAttributes(): void
+    {
+        // Content of tests/fixtures/unittest_annotation_test: "This is a annotation test dummy".
+        $result = file_get_contents('http://google.com');
+        $this->assertEquals('This is a annotation test dummy.', $result, 'Call was not intercepted (using attributes).');
     }
 
     /**
